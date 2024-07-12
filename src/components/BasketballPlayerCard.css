@@ -1,0 +1,91 @@
+* {
+  font-family: sans-serif;
+}
+.app-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.player-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.7);
+  width: calc(30% - 20px);
+  margin: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.player-card:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+
+.player-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.player-name {
+  font-size: 30px;
+  margin: 10px 0;
+  font-weight: bolder;
+  color: rgb(1, 13, 107);
+}
+.player-position {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  padding: 10px;
+  color: rgba(39, 70, 162, 0.9);
+  font-size: large;
+  font-weight: bold;
+}
+.player-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+
+  background-color: rgba(186, 183, 249, 0.2);
+}
+
+.player-stats p {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  width: 200px;
+  margin: 5px 0;
+  font-size: 1em;
+  color: rgb(99, 99, 169);
+}
+.stats-color {
+  color: rgb(0, 60, 255);
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .player-card {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .player-name {
+    font-size: 1.2em;
+  }
+
+  .player-position {
+    font-size: 1em;
+  }
+
+  .player-stats p {
+    font-size: 0.9em;
+  }
+}
